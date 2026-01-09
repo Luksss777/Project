@@ -948,6 +948,21 @@ section .bot3 {
 }
 
 
+/* Kitchens.html */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;  
+  display: block;
+}
 
 /* index.html responsive */
 @media (max-width: 1024px) {
@@ -1297,4 +1312,21 @@ section .cardsss {
   .cube h2 {
     font-size: 1.5rem; 
   }
+}
+
+
+/* Kitchens.html responsive */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;  
+  display: block;
 }
