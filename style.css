@@ -1041,9 +1041,9 @@ a {
     transform: rotate(-45deg) translate(5px, -6px);
   }
 
-    .morab {
+  .morab {
     padding: 0 30px 0 30px;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .morab .left {
