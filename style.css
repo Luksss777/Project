@@ -35,15 +35,17 @@ header nav {
   z-index: 1000;
 }
 
-header nav i {
+header nav .material-symbols-outlined {
   font-size: 40px;
   color: #a26028;
+  display: block;
+  font-weight: 777;
 }
 
 header nav .marjvena {
   display: flex;
-  align-items: baseline;
-  gap: 13px;
+  align-items: center;
+  gap: 10px;
 }
 
 nav .marjvena h1 {
