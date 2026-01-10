@@ -1041,6 +1041,16 @@ a {
     transform: rotate(-45deg) translate(5px, -6px);
   }
 
+    .morab {
+    padding: 0 30px 0 30px;
+    flex-direction: column;
+  }
+
+  .morab .left {
+    width: 100%;
+    min-height: 350px;
+  }
+
   section .image {
     height: 600px;
     padding: 30px;
