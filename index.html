@@ -24,12 +24,30 @@
   </head>
   <body>
 
-    <div id="chatpopup" class="letschat">
+<div id="chatpopup" class="letschat" onclick="openChat()">
       <div class="chat">
         <span><i class="fa-solid fa-message"></i></span>
         <span><h3>Let's Chat</h3></span>
       </div>
     </div>
+
+    <div id="chatWindow" class="chat-container">
+      <div class="chat-header">
+        <div class="header-info">
+          <strong>M&B Remodeling</strong>
+          <p><span class="online-dot"></span> We'll reply as soon as we can</p>
+        </div>
+        <button id="closeChat" onclick="closeChat()">&times;</button>
+      </div>
+      
+      <div class="chat-body" id="message-container"></div>
+
+      <div class="chat-footer">
+        <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="handleKey(event)">
+        <button id="sendBtn" onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+
 
     <header>
       <nav>
@@ -267,6 +285,8 @@
       </div>
     </footer>
 
+
+     <script src="script.js"></script>
     <!-- all done -->
   </body>
 </html>
