@@ -26,10 +26,6 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  animation: appear linear both;
-  animation-timeline: scroll();
-  animation-range: 100px 200px;
-  transition: all 0.4s ease-in-out;
 }
 
 .chat {
