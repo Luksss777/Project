@@ -1485,9 +1485,7 @@ section .cardsss {
     height: 45px;
     bottom: 15px;
     right: 15px;
-    padding: 8px 15px;
   }
-
   .chat h3 {
     font-size: 14px;
   }
@@ -1498,14 +1496,13 @@ section .cardsss {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    bottom: 10px;
-    right: 10px;
+    bottom: 15px;
+    right: 15px;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
   .chat {
     height: 100%;
     width: 100%;
@@ -1517,5 +1514,25 @@ section .cardsss {
 
   .chat h3 {
     display: none;
+  }
+  .chat span i {
+    font-size: 20px;
+  }
+
+  .chat-container {
+    width: 100% !important;
+    height: 100% !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    border-radius: 0;
+    transform: translateY(100%);
+  }
+
+  .chat-container.active {
+    transform: translateY(0);
+  }
+
+  .chat-header {
+    padding: 20px 15px;
   }
 }
