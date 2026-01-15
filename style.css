@@ -1311,6 +1311,11 @@ a {
 }
 
 @media (max-width: 650px) {
+  section .orservic {
+    padding: 0 20px;
+  }
+
+
   section .grid-container {
     grid-template-columns: 1fr;
   }
