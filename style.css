@@ -298,8 +298,7 @@ section .image button {
 }
 
 .morab .left {
-  min-width: 450px;
-  max-width: 1000px;
+  width: 1000px;
   height: 600px;
   background-image: url(../images/samz.avif);
   background-position: center;
@@ -308,7 +307,6 @@ section .image button {
 
 .morab .right {
   display: flex;
-  margin: auto;
   flex-direction: column;
   justify-content: center;
   padding: 0 120px 0 120px;
@@ -1104,11 +1102,11 @@ a {
 
   .morab .left {
     width: 100%;
-    min-height: 400px;
+    height: 400px;
   }
 
   .morab .right {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
    
   .services {
