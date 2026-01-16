@@ -299,7 +299,7 @@ section .image button {
 
 .morab .left {
   width: 1000px;
-  height: 600px;
+  height: 600px !important;
   background-image: url(../images/samz.avif);
   background-position: center;
   background-size: cover;
@@ -1090,6 +1090,27 @@ a {
 }
 
 /* index.html responsive */
+@media (min-width: 1024px) {
+  .morab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .morab .left {
+    flex: 1;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    min-width: 50%;
+    max-width: 1000px;
+  }
+
+  .morab .right {
+    flex: 1;
+  }
+}
+
 @media (max-width: 1024px) {
   header nav {
     padding: 0 30px;
@@ -1097,18 +1118,26 @@ a {
   }
 
   .morab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 0 70px 0 70px;
   }
 
   .morab .left {
-    width: 100%;
-    height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    min-width: 50%;
+    max-width: 1000px;
+    height: 450px;
   }
 
   .morab .right {
     padding: 40px 0;
+    flex: 1;
   }
-   
+
   .services {
     margin-top: 20px;
   }
@@ -1121,6 +1150,11 @@ a {
   .services .card {
     width: 45%;
     height: 500px;
+  }
+
+  .customers .cardss {
+    display: flex;
+    gap: 20px;
   }
 }
 
